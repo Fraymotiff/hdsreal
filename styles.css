@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(72deg, #0b3511 35%, #99eba5,#129426 99%); ;
+}
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(6, 27, 5, 0.75);
+}
+
+.content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 50px;
+    left: 650px;
+    display: flex;
+}
+
+.bar {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+} 
+
+
+/*/
+  
+  
+   /* start of  navigation menu */
+      /*============================================*/
+    
+  
+  
+      ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-radius:10px;
+    
+    }
+    
+    li{
+        list-style: none;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        font-size: 19px;
+        font-family: 'Kdam Thmor Pro',sans-serif;
+        border-radius:10px;
+        
+       
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+color:rgb(255, 255, 255)  ;  
+        
+    }
+
+
+    nav ul li a:hover {
+        text-decoration: none;
+        color:rgb(255, 255, 255)  2px;
+    }
+
+
+     li :hover{
+    z-index: 10;
+    color: rgb(255, 255, 255)  ;
+    border-radius:10px;
+    }
+.child {
+    display: none;
+    box-shadow: 1px 1px 0px 0px  rgb(24, 19, 22);
+    z-index: 10;
+    border-radius:10px;
+}
+
+nav ul li:hover .child {
+    display: block;
+position:absolute
+
+
+
+
+
+}
+
+nav ul li:hover .child  ul{
+    display: block;
+    z-index: 10;
+    background-color:#0b3511 ;
+    color: rgb(100, 100, 100)  ;
+    z-index:05;
+    width: 150px;
+    
+}
+nav ul li:hover .child  ul li{
+width: 150px;
+text-align: center;
+transition: 0.7s;
+z-index: 05;
+background-color:#0b3511 ;
+border-radius:10px;
+    width: 150px;
+
+    border-radius:10px;
+}
+
+
+
+
+ /*end of navigation menu */
+body { height: 100vh;
+    width: 100; }
+*{
+  margin:0;
+  padding:0;
+background-color:#0b3511 ;
+list-style: none;
+text-decoration: none;}
+
+header {
+  height: 90px;
+  display:flex;
+  justify-content : space-around;
+  align-items: center; 
+}
+
+
+nav {
+  width: 60%;
+  
+  
+
+}
+
+
+
+
+
+
+
+
+#logo {
+    width: 95px;
+    height:auto;
+}
+
+/* start of  navigation menu */
+  /*============================================*/
+
+
+
+  ul{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      border-radius:10px;
+  
+  }
+  
+  li{
+      list-style: none;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      font-size: 19px;
+      font-family: 'Kdam Thmor Pro',sans-serif;
+      border-radius:10px;
+      
+     
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+color:rgb(255, 255, 255)  ;  
+      
+  }
+
+
+  nav ul li a:hover {
+      text-decoration: none;
+      color:rgb(68, 225, 102)  2px;
+  }
+
+
+   li :hover{
+  z-index: 10;
+  color: rgb(151, 255, 196)  ;
+  border-radius:10px;
+  }
+.child {
+  display: none;
+  box-shadow: 1px 1px 0px 0px  rgb(24, 19, 22);
+  z-index: 10;
+  border-radius:10px;
+}
+
+nav ul li:hover .child {
+  display: block;
+position:absolute
+
+
+
+
+
+}
+
+nav ul li:hover .child  ul{
+  display: block;
+  z-index: 10;
+  background-color#0b3511 ;
+  color: rgb(95, 95, 95)  ;
+  z-index:05;
+  width: 150px;
+  
+}
+nav ul li:hover .child  ul li{
+width: 150px;
+text-align: center;
+transition: 0.7s;
+z-index: 05;
+background-color:#0b3511 ;
+border-radius:10px;
+  width: 150px;
+
+  border-radius:10px;
+}
+
+
+
+
+/*end of navigation menu */
