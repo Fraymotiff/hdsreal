@@ -270,7 +270,7 @@ position:absolute
 nav ul li:hover .child  ul{
   display: block;
   z-index: 10;
-  background-color#0b3511 ;
+  background-color: #0b3511 ;
   color: rgb(95, 95, 95)  ;
   z-index:05;
   width: 150px;
@@ -292,3 +292,42 @@ border-radius:10px;
 
 
 /*end of navigation menu */
+
+
+footer-list {
+    display:flex;
+    flex-direction:column;
+align-items: center;
+background
+}
+
+.footer-navigaton {
+display:none
+background-color:#0b3511 ;
+
+}
+
+@media(max-width: 768px){
+    .footer-navigaton
+    display:block ;
+
+nav {display:none;
+}}
+
+@media(max-width: 768px){
+    .footer-navigaton
+    display:block;
+
+nav {display:none;
+}
+}
+
+
+
+.content{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
