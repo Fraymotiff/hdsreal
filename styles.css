@@ -334,7 +334,7 @@ z-index: 1;
     }
     .navigation  {
        
-        bottom: 190px;
+        bottom: 160px;
         left: 90px;
         display:flex
         flex-direction: column;
