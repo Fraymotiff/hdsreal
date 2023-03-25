@@ -10,7 +10,100 @@
 <header>
     <img id="logo" src="./logo sem escudo (1).PNG"/>
 
+    <!-- MOBILE STUFFF -->
 
+    
+    <style>
+ 
+    
+    .mobile-container {
+      max-width: 480px;
+      margin: auto;
+      background-color: #555;
+      height: 500px;
+      color: white;
+      border-radius: 10px;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+      position: relative;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+    
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <div style="padding-left:16px">
+      <h3>Menu -></h3>
+     
+    </div>
+    
+    <!-- End smartphone / tablet look -->
+    </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+
+    <!--MOBILE STUFF-->
 <nav id="nav">
     <ul class="links">
       <li class="links"><a class="active" href="#home">Home</a></li>
@@ -82,22 +175,7 @@
         <span>Site desenvolvido por Lua Morel 2023</span>
         <span>Todos os direitos reservados</span>
         
-        <nav class="footernav">
-        <ul class="footerli">
-              <li class="links"><a class="active" href="#home">Home</a></li>
-              <li class="links"><a href="#news">Sobre Nós</a></li>
-              <li class=""><a href="#about">Nossos Eventos</a>
-                <div class="child">
-                    <ul>
-                        <li>Eventos Potterianos</li>
-                        <li>Eventos de cultura pop</li>
-                        <li>Pré-estreias</li>
-                        <li>Outros eventos</li>
-                    </ul></div> ->
-                  </li>
-                  <li class="links"><a href="#contact">Contato</a></li>
-                  <li class="links"><a href="#about">Loja</a>
-                </ul>   
+       
         
         
         </nav></footer>

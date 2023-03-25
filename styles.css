@@ -241,7 +241,7 @@ color:rgb(255, 255, 255)  ;
 
   nav ul li a:hover {
       text-decoration: none;
-      color:rgb(68, 225, 102)  2px;
+      
   }
 
 
@@ -292,7 +292,8 @@ border-radius:10px;
 
 
 /*end of navigation menu */
-
+.mobile-container {
+    display: none;}
 
 footer { height: 90px;
     margin-top: 600px;
@@ -334,5 +335,7 @@ span {color:#ffffff
         align-items: center;
 
     }
-    
+    .mobile-container {
+      display: block;
+      }
     }
