@@ -297,9 +297,7 @@ border-radius:10px;
 
 footer { height: 90px;
     margin-top: 600px;
-    display: flex;
-    align-items: center;
-justify-content: space-around;}
+}
 
 span {color:#ffffff
 }
@@ -323,19 +321,35 @@ span {color:#ffffff
         display: none;
     }
 
-    .content { background-position: 20%;
+    .content { background-position: 30%;
+        background-size: 30%;
+        height: 220px;
+        width: 325px;
         display:flex
         flex-direction: column;
     align-items: center;
+right: 90px
+z-index: -2;
     }
+    .navigation {
+        position: absolute;
+        bottom: 200px;
+        left: 90px;
+        display:flex
+        flex-direction: column;
+    align-items: center;}
 
+body {width:400px}
     #logo {
         width: 80px;
-        height:auto;
+        height: 80px;
         align-items: center;
+      top: 20px
 
     }
     .mobile-container {
       display: block;
       }
+
+ 
     }
