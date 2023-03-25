@@ -11,106 +11,27 @@
     <img id="logo" src="./logo sem escudo (1).PNG"/>
 
     <!-- MOBILE STUFFF -->
-
     
-    <style>
- 
-    .menu{
-      background-color: #0b3511;
-      color: white;
-      width:250px;
-      height:60px;
-      display: flex;
-    align-items: center;
-justify-content: space-around; 
-z-index: 2;
-    }
-    .mobile-container {
-      max-width: 480px;
-      margin: auto;
-      height: 500px;
-      color: white;
-      border-radius: 10px;
-    }
-    
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-      position: relative;
-    }
-    
-    .topnav #myLinks {
-      display: none;
-    }
-    
-    .topnav a {
-      color: white;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      display: block;
-    }
-    
-    .topnav a.icon {
-      display: block;
-      position: absolute;
-      right: 90px;
-      top: 0;
-      color: #ffffff;
-    
-    }
-    
-    .topnav a:hover {
-      background-color:#13571e;
-
-    }
-    
-    .active {
-      background-color:#13571e;
-      color: white;
-      width:250px;
-    
-    }
-    </style>
-    </head>
-    <body>
-    
-    <!-- Simulate a smartphone / tablet -->
-    <div class="mobile-container">
-    
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <div id="myLinks">
-   <a class="active" href="#home">Home</a></li>
-       <a href="#news">Sobre Nós</a></li>
-       <a href="#about">Nossos Eventos</a>
-              
-           <a href="#contact">Contato</a></li>
-          <a href="#about">Loja</a>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">Sobre Nós</a>
+      <div class="dropdown">
+        <button class="dropbtn">Nossos Eventos
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Eventos Potterianos</a>
+          <a href="#">Eventos de cultura pop</a>
+          <a href="#">Pré-estreias</a>
+          <a href="#">Outros eventos</a>
+        </div>
       </div>
-      <a href="javascript:void(0);" class="menu" onclick="myFunction()">
-        <i class="fa fa-bars">Menu</i>
+      <a href="#about">Contato</a>
+          <a href="#about">Loja</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
-      </a>
-    </div>
-    
-  
-    
-    <!-- End smartphone / tablet look -->
-    </div>
-    
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
-    
- 
+
 
     <!--MOBILE STUFF-->
 <nav id="nav">
@@ -124,7 +45,7 @@ z-index: 2;
                 <li>Eventos de cultura pop</li>
                 <li>Pré-estreias</li>
                 <li>Outros eventos</li>
-            </ul></div> ->
+            </ul></div>
           </li>
           <li class="links"><a href="#contact">Contato</a></li>
           <li class="links"><a href="#about">Loja</a>
